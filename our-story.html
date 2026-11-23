@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Story - SUGAR BLOOM DESSERT</title>
+    <title>Our Story - Sugar Bloom Dessert</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
       *{margin:0;padding:0;box-sizing:border-box}
       body{font-family:'Poppins',sans-serif;overflow-x:hidden}
 
-      /* NAVBAR - SAMA PERSIS KAYAK HOME YANG UDAH BENER */
+      /* NAVBAR SAMA KAYAK HOME */
       .navbar{position:absolute;top:0;left:0;right:0;z-index:100;background:transparent}
       .nav-container{display:flex;justify-content:space-between;align-items:flex-start;padding:18px 22px}
       .logo{font-family:'Playfair Display';font-weight:700;font-size:18px;line-height:1.1;color:#fff;letter-spacing:1px}
@@ -20,10 +20,11 @@
       .nav-menu a{text-decoration:none;color:#FFF8F0;font-size:18px;font-weight:500;padding:14px 40px;border-radius:10px;width:85%;max-width:360px;text-align:center}
       .nav-menu a.active{background:#D7B68F;color:#2B1A14;font-weight:600}
 
-      /* ISI OUR STORY - PUNYA KAMU */
+      /* ISI OUR STORY - SESUAI SCREENSHOT KAMU */
       .story-hero{min-height:100vh;background:linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.30)), url('images/cafe-interior.jpeg');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;padding:110px 20px 40px}
-      .story-box{background:rgba(0,0,0,.45);border-radius:15px;padding:32px 22px;max-width:520px;text-align:center}
-      .story-text{color:#fff;font-size:17px;line-height:1.9;font-weight:300}
+      .story-box{background:rgba(0,0,0,.45);backdrop-filter:blur(4px);border-radius:15px;padding:32px 22px;max-width:520px;text-align:center}
+      .story-box p{color:#fff;font-size:17px;line-height:1.9;font-weight:300}
+      .story-box h1{font-family:'Playfair Display';color:#fff;font-size:32px;margin-bottom:18px}
 
       @media(min-width:851px){
         .nav-container{padding:20px 45px}
@@ -31,6 +32,8 @@
         .nav-menu{position:static;display:flex !important;flex-direction:row;background:none;gap:8px;justify-content:flex-end}
         .nav-menu a{color:#fff;font-size:11px;letter-spacing:1.5px;padding:7px 12px;width:auto}
         .nav-menu a.active{background:#fff;color:#5D4037}
+        .story-box{padding:40px}
+        .story-box p{font-size:18px}
       }
     </style>
 </head>
@@ -38,10 +41,7 @@
 
     <header class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                SUGAR BLOOM<br>
-                <span>DESSERT</span>
-            </div>
+            <div class="logo">SUGAR BLOOM<br><span>DESSERT</span></div>
             <button class="menu-button" onclick="toggleMenu()">☰</button>
             <nav class="nav-menu" id="navMenu">
                 <a href="home.html">Home</a>
@@ -57,11 +57,9 @@
 
     <section class="story-hero">
         <div class="story-box">
-            <p class="story-text">
-                Berawal dari mimpi sederhana untuk menghadirkan kebahagiaan melalui dessert, 
-                Sugar Bloom Dessert tumbuh menjadi tempat di mana setiap hidangan dibuat 
-                dengan cinta dan perhatian. Kami ingin setiap pelanggan membawa pulang lebih 
-                dari sekadar makanan manis, tetapi juga kenangan indah yang selalu ingin diulang kembali.
+            <h1>Our Story</h1>
+            <p>
+                Berawal dari mimpi sederhana untuk menghadirkan kebahagiaan melalui dessert, Sugar Bloom Dessert tumbuh menjadi tempat di mana setiap hidangan dibuat dengan cinta dan perhatian. Kami ingin setiap pelanggan membawa pulang lebih dari sekadar makanan manis, tetapi juga kenangan indah yang selalu ingin diulang kembali.
             </p>
         </div>
     </section>
