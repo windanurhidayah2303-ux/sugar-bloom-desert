@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CONTACT - Sugar Bloom Dessert</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Poppins',sans-serif;background:#000}
+  
+  nav{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:22px 40px;background:transparent;
+    position:absolute;top:0;left:0;width:100%;z-index:10;
+  }
+  .logo{font-family:'Playfair Display';font-weight:700;color:#fff;font-size:22px;line-height:1.1;letter-spacing:1px}
+  .nav-links{display:flex;gap:28px;align-items:center}
+  .nav-links a{text-decoration:none;color:#fff;font-size:12px;letter-spacing:1px;opacity:.9}
+  .nav-links a.active{border:1px solid #fff;padding:7px 16px;opacity:1}
+
+  .contact-hero{
+    height:100vh;width:100%;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('images/story.jpeg');
+    background-size:cover;background-position:center;
+    display:flex;justify-content:center;align-items:center;
+    text-align:center;color:#fff;
+  }
+  .contact-content p{
+    line-height:2;font-size:15px;letter-spacing:.3px;
+    text-shadow:0 2px 4px rgba(0,0,0,.5);
+  }
+  @media(max-width:850px){.nav-links{display:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">SUGAR BLOOM<br>DESSERT</div>
+  <div class="nav-links">
+    <a href="home.html">HOME</a>
+    <a href="our-story.html">OUR STORY</a>
+    <a href="our-menu.html">OUR MENU</a>
+    <a class="active" href="contact.html">CONTACT</a>
+    <a href="location.html">LOCATION</a>
+    <a href="sweet-offers.html">SWEET OFFERS</a>
+    <a href="thanks.html">THANKS</a>
+  </div>
+</nav>
+
+<div class="contact-hero">
+  <div class="contact-content">
+    <p>
+      WhatsApp : +62 812-3456-7890<br>
+      • Email : sugarbloomdessert@gmail.com<br>
+      • Instagram : @sugarbloomdessert<br>
+      • Jam Operasional:<br>
+      Senin-Jumat : 08.00-21.00 WIB<br>
+      Sabtu-Minggu : 08.00-22.00 WIB
+    </p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THANKS - Sugar Bloom Dessert</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Poppins',sans-serif;background:#000}
+  
+  nav{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:22px 40px;background:transparent;
+    position:absolute;top:0;left:0;width:100%;z-index:10;
+  }
+  .logo{font-family:'Playfair Display';font-weight:700;color:#fff;font-size:22px;line-height:1.1;letter-spacing:1px}
+  .nav-links{display:flex;gap:28px;align-items:center}
+  .nav-links a{text-decoration:none;color:#fff;font-size:12px;letter-spacing:1px;opacity:.9}
+  .nav-links a.active{border:1px solid #fff;padding:7px 16px;opacity:1}
+
+  .thanks-hero{
+    height:100vh;width:100%;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('images/home.jpg');
+    background-size:cover;background-position:center;
+    display:flex;justify-content:center;align-items:center;
+    text-align:center;color:#fff;
+  }
+  .thanks-content{max-width:850px;padding:20px}
+  .thanks-content p{font-size:20px;font-weight:600;line-height:1.6;text-shadow:0 2px 4px rgba(0,0,0,.5)}
+
+  @media(max-width:850px){.nav-links{display:none} .thanks-content p{font-size:14px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">SUGAR BLOOM<br>DESSERT</div>
+  <div class="nav-links">
+    <a href="home.html">HOME</a>
+    <a href="our-story.html">OUR STORY</a>
+    <a href="our-menu.html">OUR MENU</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="location.html">LOCATION</a>
+    <a href="sweet-offers.html">SWEET OFFERS</a>
+    <a class="active" href="thanks.html">THANKS</a>
+  </div>
+</nav>
+
+<div class="thanks-hero">
+  <div class="thanks-content">
+    <p>
+      Terima kasih telah mengunjungi website Sugar Bloom Dessert. Semoga setiap hidangan yang kami sajikan dapat memberikan kebahagiaan dan membuat hari Anda menjadi lebih manis.
+    </p>
+  </div>
+</div>
+
+</body>
+</html>

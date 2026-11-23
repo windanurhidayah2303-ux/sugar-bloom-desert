@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OUR MENU - Sugar Bloom Dessert</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{ --cream:#FFF8F0; --cream2:#FFF2E6; --choco:#5D4037; --choco-light:#8D6E63; --accent:#D7B68F; }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Poppins',sans-serif;background:var(--cream);color:var(--choco);}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:18px 40px;background:#FFFBF7;border-bottom:1px solid #EADAC8;position:sticky;top:0;z-index:10}
+  .logo{font-family:'Playfair Display';font-weight:700;letter-spacing:1px}
+  .nav-links{display:flex;gap:24px;font-size:12px;letter-spacing:1px}
+  .nav-links a{text-decoration:none;color:var(--choco);opacity:.7}
+  .nav-links a.active{border:1px solid var(--choco);padding:6px 14px;opacity:1}
+  .hero{text-align:center;padding:70px 20px 40px}
+  .hero h1{font-family:'Playfair Display';font-size:38px;line-height:1.3;max-width:700px;margin:0 auto}
+  .hero p{max-width:620px;margin:14px auto 0;color:var(--choco-light);line-height:1.7}
+  .menu-section{max-width:1100px;margin:0 auto;padding:50px 32px;display:flex;gap:40px;align-items:center;border-bottom:1px dashed #E8D5C0}
+  .menu-section:nth-child(even){flex-direction:row-reverse;background:var(--cream2)}
+  .menu-img{flex:1;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(93,64,55,.12);border:6px solid #fff}
+  .menu-img img{width:100%;height:340px;object-fit:cover;display:block}
+  .menu-text{flex:1.1}
+  .menu-text h2{font-family:'Playfair Display';font-size:28px;margin-bottom:14px}
+  .menu-text p{line-height:1.8;color:#6D4C41;font-size:15px}
+  .barcode-section{text-align:center;padding:80px 20px;background:#fff;border-top:2px solid #EADAC8}
+  .barcode-section h2{font-family:'Playfair Display';font-size:32px;margin-bottom:10px}
+  .barcode-section p.sub{color:var(--choco-light);margin-bottom:30px}
+  .barcode-box{display:inline-block;padding:28px;background:var(--cream);border:2px dashed var(--accent);border-radius:20px}
+  .barcode-box img{width:280px;border-radius:12px;display:block}
+  @media(max-width:850px){.menu-section,.menu-section:nth-child(even){flex-direction:column} .nav-links{display:none} .menu-img img{height:260px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">SUGAR BLOOM DESSERT</div>
+  <div class="nav-links">
+    <a href="home.html">HOME</a>
+    <a href="our-story.html">OUR STORY</a>
+    <a class="active" href="our-menu.html">OUR MENU</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="location.html">LOCATION</a>
+    <a href="sweet-offers.html">SWEET OFFERS</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>A Collection of sweet creations made to brighten every moment</h1>
+  <p>Setiap dessert dibuat dengan bahan premium, fresh daily, made with love.</p>
+</div>
+
+<!-- MENU 1 -->
+<div class="menu-section">
+  <div class="menu-img"><img src="images/caramel-banana.jpeg" alt="Caramel Banana Split"></div>
+  <div class="menu-text">
+    <h2>1. Caramel Banana Split</h2>
+    <p>Lembutnya es krim, manisnya karamel, dan segarnya pisang berpadu dalam satu hidangan yang dibuat untuk menemani momen-momen sederhana menjadi lebih berkesan.</p>
+  </div>
+</div>
+
+<!-- MENU 2 -->
+<div class="menu-section">
+  <div class="menu-img"><img src="images/berry-cupcake.jpeg" alt="Berry Bliss Cupcake"></div>
+  <div class="menu-text">
+    <h2>2. Berry Bliss Cupcake Collection</h2>
+    <p>Nikmati berbagai pilihan cupcake dengan topping buah segar, cokelat, dan krim premium yang lembut. Setiap varian dibuat dengan cita rasa yang berbeda, sehingga selalu ada cupcake yang cocok untuk setiap selera.</p>
+  </div>
+</div>
+
+<!-- MENU 3 -->
+<div class="menu-section">
+  <div class="menu-img"><img src="images/mini-waffles.jpeg" alt="Bloom Mini Waffles"></div>
+  <div class="menu-text">
+    <h2>3. Bloom Mini Waffles</h2>
+    <p>Waffle mini yang renyah di luar dan lembut di dalam, dipadukan dengan krim lembut serta buah-buahan segar pilihan. Setiap gigitan menghadirkan rasa manis yang membuat harimu semakin istimewa.</p>
+  </div>
+</div>
+
+<!-- MENU 4 -->
+<div class="menu-section">
+  <div class="menu-img"><img src="images/loaded-cookies.jpeg" alt="Loaded Cookies"></div>
+  <div class="menu-text">
+    <h2>4. Loaded Cookies</h2>
+    <p>Cookies berukuran besar dengan tekstur renyah di luar dan lembut di dalam. Dipenuhi berbagai topping cokelat, biskuit, dan permen yang membuat setiap gigitan terasa lebih spesial.</p>
+  </div>
+</div>
+
+<!-- MENU 5 -->
+<div class="menu-section">
+  <div class="menu-img"><img src="images/cake-selection.jpeg" alt="Bloom Cake Selection"></div>
+  <div class="menu-text">
+    <h2>5. Bloom Cake Selection</h2>
+    <p>Aneka potongan cake premium, mulai dari strawberry shortcake, matcha mille crepes, hingga chocolate blueberry. Dibuat dari bahan pilihan, lembut, lumer di mulut, dan cocok untuk menemani waktu santai, merayakan momen spesial, atau sekadar memanjakan diri.</p>
+  </div>
+</div>
+
+<!-- MENU 6 -->
+<div class="menu-section">
+  <div class="menu-img"><img src="images/churros.jpeg" alt="Churros Fantasy"></div>
+  <div class="menu-text">
+    <h2>6. Churros Fantasy</h2>
+    <p>Churros renyah dengan taburan gula, disajikan bersama saus cokelat lumer dan berbagai topping spesial. Perpaduan tekstur renyah di luar dan lembut di dalam, setiap gigitan penuh kelezatan dan kebahagiaan.</p>
+  </div>
+</div>
+
+<!-- MENU 7 -->
+<div class="menu-section">
+  <div class="menu-img"><img src="images/mint-choco.jpeg" alt="Mint Choco Dream Cup"></div>
+  <div class="menu-text">
+    <h2>7. Mint Choco Dream Cup</h2>
+    <p>Perpaduan lembut mousse mint yang menyegarkan dengan lapisan cokelat di bagian dasar, ditaburi whipped cream, cokelat premium, dan daun mint segar. Rasa yang ringan, manis, dan segar dengan sensasi dingin yang bikin ketagihan.</p>
+  </div>
+</div>
+
+<!-- BARCODE -->
+<div class="barcode-section">
+  <h2>Scan for Price List</h2>
+  <p class="sub">Scan barcode di bawah untuk lihat harga lengkap Sugar Bloom Dessert</p>
+  <div class="barcode-box">
+    <img src="images/barcode-harga.jpeg" alt="Barcode Harga">
+    <p style="margin-top:14px;font-size:12px;opacity:.6">SUGAR BLOOM DESSERT</p>
+  </div>
+</div>
+
+</body>
+</html>

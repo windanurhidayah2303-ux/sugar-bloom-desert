@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* NAVIGATION */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 6%;
+
+    z-index: 10;
+    color: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 0.95;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav .active {
+    border: 1px solid white;
+    padding: 12px 20px;
+}
+
+/* HOME / HERO */
+.hero {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.38),
+            rgba(0, 0, 0, 0.38)
+        ),
+        url("images/home.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    color: white;
+
+    margin-left: 11%;
+    margin-top: 70px;
+}
+
+.welcome {
+    font-size: 16px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 300;
+
+    line-height: 1.25;
+
+    margin-bottom: 25px;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-style: italic;
+
+    margin-bottom: 35px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.button {
+    background-color: white;
+    color: #555;
+
+    padding: 15px 28px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+.view-dessert {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.qr-code {
+    position: absolute;
+
+    right: 22%;
+    top: 47%;
+
+    width: 180px;
+    height: 180px;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   OUR STORY PAGE
+   ========================= */
+
+.story-hero {
+    min-height: 100vh;
+    background-image: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.2), 
+            rgba(0, 0, 0, 0.2)
+        ), 
+        url("images/story.jpeg");
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.story-box {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 850px;
+    text-align: center;
+    backdrop-filter: blur(2px);
+}
+
+.story-box p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
