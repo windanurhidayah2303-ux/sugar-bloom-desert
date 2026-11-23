@@ -4,24 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Story - SUGAR BLOOM DESSERT</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+      *{margin:0;padding:0;box-sizing:border-box}
+      body{font-family:'Poppins',sans-serif;overflow-x:hidden}
+
+      /* NAVBAR - SAMA PERSIS KAYAK HOME YANG UDAH BENER */
+      .navbar{position:absolute;top:0;left:0;right:0;z-index:100;background:transparent}
+      .nav-container{display:flex;justify-content:space-between;align-items:flex-start;padding:18px 22px}
+      .logo{font-family:'Playfair Display';font-weight:700;font-size:18px;line-height:1.1;color:#fff;letter-spacing:1px}
+      .logo span{color:#D7B68F}
+      .menu-button{font-size:28px;background:none;border:none;cursor:pointer;color:#fff;padding:5px 10px}
+      .nav-menu{position:fixed;inset:0;background:#2B1A14;display:none;flex-direction:column;align-items:center;justify-content:center;gap:6px;z-index:200}
+      .nav-menu.open{display:flex}
+      .nav-menu a{text-decoration:none;color:#FFF8F0;font-size:18px;font-weight:500;padding:14px 40px;border-radius:10px;width:85%;max-width:360px;text-align:center}
+      .nav-menu a.active{background:#D7B68F;color:#2B1A14;font-weight:600}
+
+      /* ISI OUR STORY - PUNYA KAMU */
+      .story-hero{min-height:100vh;background:linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.30)), url('images/cafe-interior.jpeg');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;padding:110px 20px 40px}
+      .story-box{background:rgba(0,0,0,.45);border-radius:15px;padding:32px 22px;max-width:520px;text-align:center}
+      .story-text{color:#fff;font-size:17px;line-height:1.9;font-weight:300}
+
+      @media(min-width:851px){
+        .nav-container{padding:20px 45px}
+        .menu-button{display:none}
+        .nav-menu{position:static;display:flex !important;flex-direction:row;background:none;gap:8px;justify-content:flex-end}
+        .nav-menu a{color:#fff;font-size:11px;letter-spacing:1.5px;padding:7px 12px;width:auto}
+        .nav-menu a.active{background:#fff;color:#5D4037}
+      }
+    </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">
-            SUGAR BLOOM<br>
-            DESSERT
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                SUGAR BLOOM<br>
+                <span>DESSERT</span>
+            </div>
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="home.html">Home</a>
+                <a href="our-story.html" class="active">Our Story</a>
+                <a href="our-menu.html">Our Menu</a>
+                <a href="contact.html">Contact</a>
+                <a href="location.html">Location</a>
+                <a href="sweet-offers.html">Sweet Offers</a>
+                <a href="thanks.html">Thanks</a>
+            </nav>
         </div>
-        <nav>
-            <a href="home.html">HOME</a>
-            <a href="our-story.html" class="active">OUR STORY</a>
-            <a href="our-menu.html">OUR MENU</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="location.html">LOCATION</a>
-            <a href="sweet-offers.html">SWEET OFFERS</a>
-            <a href="thanks.html">THANKS</a>
-        </nav>
     </header>
 
     <section class="story-hero">
@@ -31,8 +62,15 @@
                 Sugar Bloom Dessert tumbuh menjadi tempat di mana setiap hidangan dibuat 
                 dengan cinta dan perhatian. Kami ingin setiap pelanggan membawa pulang lebih 
                 dari sekadar makanan manis, tetapi juga kenangan indah yang selalu ingin diulang kembali.
-        </p>
+            </p>
+        </div>
     </section>
+
+<script>
+function toggleMenu(){
+  document.getElementById('navMenu').classList.toggle('open');
+}
+</script>
 
 </body>
 </html>
