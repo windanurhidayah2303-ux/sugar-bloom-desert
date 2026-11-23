@@ -4,39 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Story - SUGAR BLOOM DESSERT</title>
-    <style>
-      *{margin:0;padding:0;box-sizing:border-box}
-      body{font-family:sans-serif;overflow-x:hidden}
-      /* INI PENGGANTI style.css KAMU BIAR FOTO MUNCUL */
-      header{position:absolute;top:0;left:0;right:0;z-index:100}
-      .nav-container{display:flex;justify-content:space-between;align-items:flex-start;padding:18px 22px}
-      .logo{font-weight:700;font-size:18px;line-height:1.1;color:#fff}
-      .menu-button{font-size:28px;background:none;border:none;color:#fff;cursor:pointer}
-      nav{position:fixed;inset:0;background:#2B1A14;display:none;flex-direction:column;align-items:center;justify-content:center;gap:6px;z-index:200}
-      nav.open{display:flex}
-      nav a{text-decoration:none;color:#FFF8F0;font-size:18px;padding:14px 40px}
-      nav a.active{background:#D7B68F;color:#2B1A14;border-radius:10px}
-      .story-hero{min-height:100vh;background:linear-gradient(160deg,#3E2723,#6D4C41,#A67C52);display:flex;align-items:center;justify-content:center;padding:110px 20px 40px}
-      .story-box{background:rgba(0,0,0,.35);border-radius:15px;padding:32px 22px;max-width:520px;text-align:center}
-      .story-text{color:#fff;font-size:17px;line-height:1.9}
-      @media(min-width:851px){
-        .menu-button{display:none}
-        nav{position:static;display:flex!important;flex-direction:row;background:none;gap:5px}
-        nav a{color:#fff;font-size:11px;padding:7px 12px}
-        nav a.active{background:#fff;color:#5D4037}
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="nav-container">
         <div class="logo">
             SUGAR BLOOM<br>
             DESSERT
         </div>
-        <button class="menu-button" onclick="toggleMenu()">☰</button>
-        <nav id="navMenu">
+        <nav>
             <a href="home.html">HOME</a>
             <a href="our-story.html" class="active">OUR STORY</a>
             <a href="our-menu.html">OUR MENU</a>
@@ -45,7 +22,6 @@
             <a href="sweet-offers.html">SWEET OFFERS</a>
             <a href="thanks.html">THANKS</a>
         </nav>
-        </div>
     </header>
 
     <section class="story-hero">
@@ -56,12 +32,7 @@
                 dengan cinta dan perhatian. Kami ingin setiap pelanggan membawa pulang lebih 
                 dari sekadar makanan manis, tetapi juga kenangan indah yang selalu ingin diulang kembali.
         </p>
-        </div>
     </section>
-
-<script>
-function toggleMenu(){document.getElementById('navMenu').classList.toggle('open')}
-</script>
 
 </body>
 </html>
