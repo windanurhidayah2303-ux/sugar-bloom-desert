@@ -5,28 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Story - SUGAR BLOOM DESSERT</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
-      /* BIAR SAMA KAYAK HOME - ADA GARIS 3 */
-      .menu-button{font-size:28px;background:none;border:none;color:#fff;cursor:pointer;padding:5px 10px}
+      /* CUMA BUAT GARIS 3 DI OUR STORY DOANG, NGGAK NGUTAK-ATIK STYLE.CSS */
+      .menu-button{font-size:28px;background:none;border:none;cursor:pointer;color:#fff;padding:5px 10px;z-index:300;position:relative;display:none}
       @media(max-width:850px){
-        header{justify-content:space-between !important;align-items:flex-start !important}
-        nav{position:fixed;inset:0;background:#2B1A14;display:none !important;flex-direction:column;align-items:center;justify-content:center;gap:6px;z-index:200}
-        nav.open{display:flex !important}
-        nav a{font-size:18px;padding:14px 40px}
-        nav a.active{border:none;background:#D7B68F;color:#2B1A14;border-radius:10px}
-      }
-      @media(min-width:851px){
-        .menu-button{display:none}
+        header{height:auto !important;align-items:flex-start !important}
+        .menu-button{display:block !important}
+        nav#navMenu{position:fixed !important;inset:0 !important;background:#2B1A14 !important;display:none !important;flex-direction:column !important;align-items:center !important;justify-content:center !important;gap:6px !important;z-index:200 !important}
+        nav#navMenu.open{display:flex !important}
+        nav#navMenu a{font-size:18px !important;padding:14px 40px !important;border:none !important;text-align:center !important}
+        nav#navMenu a.active{background:#D7B68F !important;color:#2B1A14 !important;border-radius:10px !important}
       }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="logo">
-            SUGAR BLOOM<br>
-            DESSERT
-        </div>
+        <div class="logo">SUGAR BLOOM<br>DESSERT</div>
         <button class="menu-button" onclick="toggleMenu()">☰</button>
         <nav id="navMenu">
             <a href="home.html">HOME</a>
@@ -39,11 +35,12 @@
         </nav>
     </header>
 
+    <!-- INI PAKE .story-page & .story-text DARI STYLE.CSS KAMU, JADI FOTO story.jpeg PASTI MUNCUL -->
     <section class="story-page">
         <p class="story-text">
-            Berawal dari mimpi sederhana untuk menghadirkan kebahagiaan melalui dessert, 
-            Sugar Bloom Dessert tumbuh menjadi tempat di mana setiap hidangan dibuat 
-            dengan cinta dan perhatian. Kami ingin setiap pelanggan membawa pulang lebih 
+            Berawal dari mimpi sederhana untuk menghadirkan kebahagiaan melalui dessert,
+            Sugar Bloom Dessert tumbuh menjadi tempat di mana setiap hidangan dibuat
+            dengan cinta dan perhatian. Kami ingin setiap pelanggan membawa pulang lebih
             dari sekadar makanan manis, tetapi juga kenangan indah yang selalu ingin diulang kembali.
         </p>
     </section>
