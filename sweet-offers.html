@@ -3,42 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LOCATION - Sugar Bloom Dessert</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<title>SWEET OFFERS - Sugar Bloom Dessert</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
   body{font-family:'Poppins',sans-serif;background:#000}
-  nav{display:flex;justify-content:space-between;align-items:center;padding:22px 40px;background:transparent;position:absolute;top:0;left:0;width:100%;z-index:10;}
-  .logo{font-family:'Playfair Display';font-weight:700;color:#fff;font-size:22px;line-height:1.1}
+  
+  nav{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:22px 40px;background:transparent;
+    position:absolute;top:0;left:0;width:100%;z-index:10;
+  }
+  .logo{font-family:'Playfair Display';font-weight:700;color:#fff;font-size:22px;line-height:1.1;letter-spacing:1px}
   .nav-links{display:flex;gap:28px;align-items:center}
   .nav-links a{text-decoration:none;color:#fff;font-size:12px;letter-spacing:1px;opacity:.9}
   .nav-links a.active{border:1px solid #fff;padding:7px 16px;opacity:1}
-  .location-hero{
-    height:100vh;width:100%;
-    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('images/location.jpg');
-    background-size:cover;background-position:center;
-    display:flex;justify-content:center;align-items:center;text-align:center;color:#fff;
-  }
-  .location-content h2{font-size:18px;margin-bottom:14px;font-weight:600}
-  .location-content p{line-height:1.6;font-size:18px;font-weight:600}
-  .qr-box{margin-top:22px;display:inline-block;background:#fff;padding:10px;border-radius:8px}
-  .qr-box img{width:130px;height:130px;display:block}
 
-  /* === TAMBAHAN GARIS 3 DOANG, YANG ATAS NGGAK DIRUBAH === */
+  .offers-hero{
+    height:100vh;width:100%;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('images/story.jpeg');
+    background-size:cover;background-position:center;
+    display:flex;justify-content:center;align-items:center;
+    text-align:center;color:#fff;
+  }
+  .offers-content{max-width:400px;padding:20px}
+  .offers-content h2{font-size:22px;font-weight:700;line-height:1.4;margin-bottom:8px;text-shadow:0 2px 4px rgba(0,0,0,.5)}
+  .offers-content p{font-size:22px;font-weight:700;line-height:1.4;text-shadow:0 2px 4px rgba(0,0,0,.5)}
+
+  /* === TAMBAHAN GARIS 3 DOANG === */
   .menu-button{display:none;font-size:30px;background:none;border:none;cursor:pointer;color:#fff;padding:5px 10px}
 
   @media(max-width:850px){
     nav{padding:22px 20px}
     .menu-button{display:block}
-    /* Di HP, menu disembunyiin, baru muncul kalau garis 3 diklik */
     .nav-links{display:none;position:fixed;inset:0;background:#2B1A14;flex-direction:column;align-items:center;justify-content:center;gap:6px;z-index:200}
     .nav-links.open{display:flex}
-    .nav-links a{color:#FFF8F0;font-size:18px;font-weight:500;padding:14px 40px;opacity:1;width:85%;max-width:360px;text-align:center;border-radius:10px}
+    .nav-links a{color:#FFF8F0;font-size:18px;padding:14px 40px;opacity:1;width:85%;max-width:360px;text-align:center;border-radius:10px}
     .nav-links a.active{background:#D7B68F;color:#2B1A14;border:none}
   }
 </style>
 </head>
 <body>
+
 <nav>
   <div class="logo">SUGAR BLOOM<br>DESSERT</div>
   <!-- TAMBAHAN GARIS 3 DOANG -->
@@ -48,18 +54,25 @@
     <a href="our-story.html">OUR STORY</a>
     <a href="our-menu.html">OUR MENU</a>
     <a href="contact.html">CONTACT</a>
-    <a class="active" href="location.html">LOCATION</a>
-    <a href="sweet-offers.html">SWEET OFFERS</a>
+    <a href="location.html">LOCATION</a>
+    <a class="active" href="sweet-offers.html">SWEET OFFERS</a>
     <a href="thanks.html">THANKS</a>
   </div>
 </nav>
-<div class="location-hero">
-  <div class="location-content">
-    <h2>Visit Our Store:</h2>
-    <p>📍 Sugar Bloom Dessert<br>Jl. Braga No. 128, Braga, Bandung, Jawa Barat 40111</p>
-    <div class="qr-box">
-      <img src="images/maps.jpeg" alt="QR Maps">
-    </div>
+
+<div class="offers-hero">
+  <div class="offers-content">
+    <h2>Birthday Special</h2>
+    <p>
+      Dapatkan<br>
+      potongan harga<br>
+      15% untuk<br>
+      pembelian saat<br>
+      hari ulang tahun<br>
+      dengan<br>
+      menunjukkan<br>
+      kartu identitas
+    </p>
   </div>
 </div>
 
