@@ -3,46 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Story - SUGAR BLOOM DESSERT</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Our Story - Sugar Bloom Dessert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-      /* CUMA BUAT GARIS 3 DI OUR STORY DOANG, NGGAK NGUTAK-ATIK STYLE.CSS */
-      .menu-button{font-size:28px;background:none;border:none;cursor:pointer;color:#fff;padding:5px 10px;z-index:300;position:relative;display:none}
-      @media(max-width:850px){
-        header{height:auto !important;align-items:flex-start !important}
-        .menu-button{display:block !important}
-        nav#navMenu{position:fixed !important;inset:0 !important;background:#2B1A14 !important;display:none !important;flex-direction:column !important;align-items:center !important;justify-content:center !important;gap:6px !important;z-index:200 !important}
-        nav#navMenu.open{display:flex !important}
-        nav#navMenu a{font-size:18px !important;padding:14px 40px !important;border:none !important;text-align:center !important}
-        nav#navMenu a.active{background:#D7B68F !important;color:#2B1A14 !important;border-radius:10px !important}
+      *{margin:0;padding:0;box-sizing:border-box}
+      body{font-family:'Poppins',sans-serif;overflow-x:hidden}
+
+      /* NAVBAR - KIRI LOGO, KANAN MENU / GARIS 3 */
+      .navbar{position:absolute;top:0;left:0;right:0;z-index:100;background:transparent}
+      .nav-container{display:flex;justify-content:space-between;align-items:center;padding:20px 22px}
+      .logo{font-family:'Poppins',sans-serif;font-weight:700;font-size:22px;line-height:1.1;color:#fff;letter-spacing:1px}
+      .menu-button{font-size:30px;background:none;border:none;cursor:pointer;color:#fff;padding:5px 10px}
+
+      .nav-menu{position:fixed;inset:0;background:#2B1A14;display:none;flex-direction:column;align-items:center;justify-content:center;gap:6px;z-index:200}
+      .nav-menu.open{display:flex}
+      .nav-menu a{text-decoration:none;color:#FFF8F0;font-size:18px;font-weight:500;padding:14px 40px;border-radius:10px;width:85%;max-width:360px;text-align:center;letter-spacing:1px}
+      .nav-menu a.active{background:#D7B68F;color:#2B1A14;font-weight:600}
+
+      /* OUR STORY - PERSIS KAYAK FOTO KAMU */
+      .story{min-height:100vh;background:linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url('images/story.jpeg');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;text-align:center;padding:110px 20px 40px;color:#fff}
+      .story p{font-size:17px;font-weight:700;line-height:1.6;max-width:820px;text-shadow:0 2px 10px rgba(0,0,0,.6)}
+
+      /* DI LAPTOP / LAYAR GEDE, BARU JEJER-JEJER KAYAK DI FOTO */
+      @media(min-width:851px){
+        .nav-container{padding:22px 40px}
+        .logo{font-size:24px}
+        .menu-button{display:none}
+        .nav-menu{position:static;display:flex !important;flex-direction:row;background:none;gap:25px;justify-content:flex-end}
+        .nav-menu a{color:#fff;font-size:12px;font-weight:500;letter-spacing:1px;padding:7px 12px;width:auto}
+        .nav-menu a.active{background:none;border:1.5px solid #fff;border-radius:0}
+        .story p{font-size:20px;line-height:1.6;max-width:900px}
       }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">SUGAR BLOOM<br>DESSERT</div>
-        <button class="menu-button" onclick="toggleMenu()">☰</button>
-        <nav id="navMenu">
-            <a href="home.html">HOME</a>
-            <a href="our-story.html" class="active">OUR STORY</a>
-            <a href="our-menu.html">OUR MENU</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="location.html">LOCATION</a>
-            <a href="sweet-offers.html">SWEET OFFERS</a>
-            <a href="thanks.html">THANKS</a>
-        </nav>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">SUGAR BLOOM<br>DESSERT</div>
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="home.html">HOME</a>
+                <a href="our-story.html" class="active">OUR STORY</a>
+                <a href="our-menu.html">OUR MENU</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="location.html">LOCATION</a>
+                <a href="sweet-offers.html">SWEET OFFERS</a>
+                <a href="thanks.html">THANKS</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- INI PAKE .story-page & .story-text DARI STYLE.CSS KAMU, JADI FOTO story.jpeg PASTI MUNCUL -->
-    <section class="story-page">
-        <p class="story-text">
-            Berawal dari mimpi sederhana untuk menghadirkan kebahagiaan melalui dessert,
-            Sugar Bloom Dessert tumbuh menjadi tempat di mana setiap hidangan dibuat
-            dengan cinta dan perhatian. Kami ingin setiap pelanggan membawa pulang lebih
-            dari sekadar makanan manis, tetapi juga kenangan indah yang selalu ingin diulang kembali.
-        </p>
+    <section class="story">
+        <p>Berawal dari mimpi sederhana untuk menghadirkan kebahagiaan melalui dessert, Sugar Bloom Dessert tumbuh menjadi tempat di mana setiap hidangan dibuat dengan cinta dan perhatian. Kami ingin setiap pelanggan membawa pulang lebih dari sekadar makanan manis, tetapi juga kenangan indah yang selalu ingin diulang kembali.</p>
     </section>
 
 <script>
