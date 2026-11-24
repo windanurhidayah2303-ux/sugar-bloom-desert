@@ -29,14 +29,27 @@
   .thanks-content{max-width:850px;padding:20px}
   .thanks-content p{font-size:20px;font-weight:600;line-height:1.6;text-shadow:0 2px 4px rgba(0,0,0,.5)}
 
-  @media(max-width:850px){.nav-links{display:none} .thanks-content p{font-size:14px}}
+  /* === TAMBAHAN GARIS 3 DOANG === */
+  .menu-button{display:none;font-size:30px;background:none;border:none;cursor:pointer;color:#fff;padding:5px 10px}
+
+  @media(max-width:850px){
+    nav{padding:22px 20px}
+    .menu-button{display:block}
+    .nav-links{display:none;position:fixed;inset:0;background:#2B1A14;flex-direction:column;align-items:center;justify-content:center;gap:6px;z-index:200}
+    .nav-links.open{display:flex}
+    .nav-links a{color:#FFF8F0;font-size:18px;padding:14px 40px;opacity:1;width:85%;max-width:360px;text-align:center;border-radius:10px}
+    .nav-links a.active{background:#D7B68F;color:#2B1A14;border:none}
+    .thanks-content p{font-size:14px}
+  }
 </style>
 </head>
 <body>
 
 <nav>
   <div class="logo">SUGAR BLOOM<br>DESSERT</div>
-  <div class="nav-links">
+  <!-- TAMBAHAN GARIS 3 DOANG -->
+  <button class="menu-button" onclick="toggleMenu()">☰</button>
+  <div class="nav-links" id="navMenu">
     <a href="home.html">HOME</a>
     <a href="our-story.html">OUR STORY</a>
     <a href="our-menu.html">OUR MENU</a>
@@ -54,6 +67,11 @@
     </p>
   </div>
 </div>
+
+<!-- TAMBAHAN SCRIPT GARIS 3 DOANG -->
+<script>
+function toggleMenu(){document.getElementById('navMenu').classList.toggle('open')}
+</script>
 
 </body>
 </html>
